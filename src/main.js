@@ -8,6 +8,8 @@ import {
   showLoader,
 } from './js/render-functions';
 
+hideLoader();
+
 const inputField = document.querySelector("[type='text']");
 const form = document.querySelector('.form');
 let input;

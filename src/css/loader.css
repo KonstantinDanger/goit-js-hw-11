@@ -21,6 +21,11 @@
   transform: rotate(-40deg);
 }
 
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);

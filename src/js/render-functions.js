@@ -30,15 +30,13 @@ export function renderGallery(images) {
 }
 
 export function showLoader() {
-  const gallery = document.querySelector('.gallery');
-  const loader = document.createElement('span');
-  loader.classList.add('loader');
-  gallery.append(loader);
+  const loader = document.querySelector('.loader');
+  if (loader.classList.contains('hidden')) loader.classList.remove('hidden');
 }
 
 export function hideLoader() {
   const loader = document.querySelector('.loader');
-  loader.remove();
+  if (!loader.classList.contains('hidden')) loader.classList.add('hidden');
 }
 
 export function clearGallery() {
